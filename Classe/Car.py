@@ -2,11 +2,12 @@ from Classe.Eleve import Eleve
 from Classe.Promotion import Promotion
 
 class Car:
-    def __init__(self, place_max, depart, arrive):
+    def __init__(self, nom, place_max, depart, arrive):
         self.list_passager = []
         self.list_promotion = []
         self.max_promotion = 3
-        self.nombre_place_max = place_max
+        self.nom = nom
+        self.nombre_place_max = 50
         self.depart = depart
         self.arrive = arrive
 
