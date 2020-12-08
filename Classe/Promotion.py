@@ -15,5 +15,6 @@ class Promotion:
 
 
     def afficher_promo(self):
-        print(self.list_eleves)
+        for eleve in self.list_eleves:
+            print(eleve.nom)
         print(f"Votre promotion est de {len(self.list_eleves)}/{self.nombre_max} élèves")

@@ -9,7 +9,7 @@ from Classe.Professeur import Prof
 ecole_epsi = Ecole("EPSI")
 
 
-# Déclaration des professeurs #
+# Déclaration des professeurs
 prof_python = Prof("MALABRY", "Emmanuel", "Python")
 prof_algo = Prof("BRAUX", "Mathias", "Algorithmie")
 prof_math = Prof("Robin", "Olivier", "Mathématique")
@@ -44,10 +44,10 @@ promotion_terminal_a.add_eleve(eleve_coline)
 
 
 
+eleve_tom.eleve_present()
 
-eleve_tom.est_present()
-eleve_theo.est_present()
-eleve_lucas.est_present()
+
+promotion_terminal_a.afficher_promo()
 
 
 
