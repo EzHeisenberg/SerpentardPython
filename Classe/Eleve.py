@@ -7,5 +7,5 @@ class Eleve(Person):
         self.ecole = ecole
         self.est_present = est_present
 
-    def present(self):
+    def eleve_present(self):
         self.est_present = True
