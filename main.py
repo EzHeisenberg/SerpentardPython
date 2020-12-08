@@ -20,6 +20,13 @@ promotion_terminal_a = Promotion("Terminal A", 12, prof_algo)
 promotion_seconde_b = Promotion("Seconde B", 9, prof_math)
 promotion_premiere_c = Promotion("Première C", 14, prof_python)
 
+# Ajouter les promotions a l'ecole
+ecole_epsi.add_promo(promotion_seconde_b)
+ecole_epsi.add_promo(promotion_premiere_c)
+ecole_epsi.add_promo(promotion_terminal_a)
+
+
+
 # Déclaration des élèves
 eleve_tom = Eleve("Poyvre","Tom", ecole_epsi.nom_ecole(), False)
 eleve_lucas = Eleve("Reteau","Lucas", ecole_epsi.nom_ecole(), False)
@@ -30,10 +37,7 @@ eleve_timote = Eleve("Dasque","Timoté", ecole_epsi.nom_ecole(), False)
 
 
 
-# Ajouter les promotions a l'ecole
-ecole_epsi.add_promo(promotion_seconde_b)
-ecole_epsi.add_promo(promotion_premiere_c)
-ecole_epsi.add_promo(promotion_terminal_a)
+
 
 # Ajout des élèves dans les promoiton
 #Terminal A
@@ -42,29 +46,42 @@ promotion_terminal_a.add_eleve(eleve_lucas)
 promotion_terminal_a.add_eleve(eleve_theo)
 promotion_terminal_a.add_eleve(eleve_florian)
 promotion_terminal_a.add_eleve(eleve_coline)
+promotion_terminal_a.add_eleve(eleve_coline)
+promotion_terminal_a.add_eleve(eleve_coline)
+promotion_terminal_a.add_eleve(eleve_coline)
+
+#Premiere C
+
+promotion_premiere_c.add_eleve(eleve_tom)
+promotion_premiere_c.add_eleve(eleve_lucas)
+promotion_premiere_c.add_eleve(eleve_theo)
+promotion_premiere_c.add_eleve(eleve_florian)
+promotion_premiere_c.add_eleve(eleve_coline)
+promotion_premiere_c.add_eleve(eleve_coline)
+promotion_premiere_c.add_eleve(eleve_coline)
+promotion_premiere_c.add_eleve(eleve_coline)
+
+
+
+
+
 
 eleve_tom.eleve_present()
 eleve_theo.eleve_present()
 eleve_lucas.eleve_present()
 eleve_florian.eleve_present()
+eleve_coline.eleve_present()
 
 
 #Créer un car
-c1 = Car(3)
-
+c1 = Car(50, ecole_epsi.nom_ecole(), "Marseille")
 
 #Ajout promo dans car
 c1.add_passager(promotion_terminal_a)
+c1.add_passager(promotion_premiere_c)
 
 
 
-eleve_tom.eleve_present()
-
-<<<<<<< HEAD
-
-promotion_terminal_a.afficher_promo()
-=======
->>>>>>> refs/remotes/origin/master
 
 
 
