@@ -12,4 +12,4 @@ class Prof(Person):
             if eleve.est_present:
                 print(f"{eleve.prenom}, {eleve.nom} est présent")
             else:
-                print(f"{eleve.prenom}, {eleve.nom} n'est pas présent")
+                print(f"{eleve.prenom}, {eleve.nom} est absent")

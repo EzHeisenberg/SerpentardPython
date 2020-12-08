@@ -35,13 +35,22 @@ ecole_epsi.add_promo(promotion_premiere_c)
 ecole_epsi.add_promo(promotion_terminal_a)
 
 # Ajout des élèves dans les promoiton
-
 #Terminal A
 promotion_terminal_a.add_eleve(eleve_tom)
 promotion_terminal_a.add_eleve(eleve_lucas)
 promotion_terminal_a.add_eleve(eleve_theo)
 promotion_terminal_a.add_eleve(eleve_florian)
 promotion_terminal_a.add_eleve(eleve_coline)
+
+
+
+
+eleve_tom.est_present()
+eleve_theo.est_present()
+eleve_lucas.est_present()
+
+
+
 
 # Faire l'appel
 prof_algo.faire_appel(promotion_terminal_a)
