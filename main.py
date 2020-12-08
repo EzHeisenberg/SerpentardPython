@@ -4,26 +4,46 @@ from Classe.Eleve import Eleve
 from Classe.Professeur import Prof
 
 
-############################
-## Declaration d'un ecole ##
-############################
 
-ecole = Ecole("EPSI")
+# Declaration d'un ecole
+ecole_epsi = Ecole("EPSI")
 
 
 # Déclaration des professeurs #
-prof_python = Prof("MALABRY", "Emmanuel")
-prof_algo = Prof("BRAUX", "Mathias")
-prof_oracle = Prof("Ontaro", "Phillips")
+prof_python = Prof("MALABRY", "Emmanuel", "Python")
+prof_algo = Prof("BRAUX", "Mathias", "Algorithmie")
+prof_math = Prof("Robin", "Olivier", "Mathématique")
 
-promotion_b1 = Promotion("B1", prof_python)
-promotion_b2 = Promotion("B2", prof_oracle)
-promotion_b3 = Promotion("B3", prof_algo)
+# Déclaration des classes
+promotion_terminal_a = Promotion("Terminal A", 12, prof_algo)
+promotion_seconde_b = Promotion("Seconde B", 9, prof_math)
+promotion_premiere_c = Promotion("Première C", 14, prof_python)
+
+# Déclaration des élèves
+eleve_tom = Eleve("Poyvre","Tom", ecole_epsi.nom_ecole(), False)
+eleve_lucas = Eleve("Reteau","Lucas", ecole_epsi.nom_ecole(), False)
+eleve_theo = Eleve("Zazou","Théo", ecole_epsi.nom_ecole(), False)
+eleve_florian = Eleve("Sinegre","Florian", ecole_epsi.nom_ecole(), False)
+eleve_coline = Eleve("Pierre","Coline", ecole_epsi.nom_ecole(), False)
+eleve_timote = Eleve("Dasque","Timoté", ecole_epsi.nom_ecole(), False)
 
 
-eleve_tom = Eleve("Poyvre","Tom", ecole.nom_ecole())
-eleve_lucas = Eleve("Reteau","Lucas", ecole.nom_ecole())
-eleve_theo = Eleve("Zazou","Théo", ecole.nom_ecole())
-eleve_florian = Eleve("Sinegre","Florian", ecole.nom_ecole())
-eleve_coline = Eleve("Pierre","Coline", ecole.nom_ecole())
-eleve_timote = Eleve("Dasque","Timoté", ecole.nom_ecole())
+
+# Ajouter les promotions a l'ecole
+ecole_epsi.add_promo(promotion_seconde_b)
+ecole_epsi.add_promo(promotion_premiere_c)
+ecole_epsi.add_promo(promotion_terminal_a)
+
+# Ajout des élèves dans les promoiton
+
+#Terminal A
+promotion_terminal_a.add_eleve(eleve_tom)
+promotion_terminal_a.add_eleve(eleve_lucas)
+promotion_terminal_a.add_eleve(eleve_theo)
+promotion_terminal_a.add_eleve(eleve_florian)
+promotion_terminal_a.add_eleve(eleve_coline)
+
+# Faire l'appel
+prof_algo.faire_appel(promotion_terminal_a)
+
+

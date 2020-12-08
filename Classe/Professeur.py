@@ -2,9 +2,14 @@ from Classe.Personne import Person
 
 
 class Prof(Person):
-    def __init__(self, nom, prenom):
+    def __init__(self, nom, prenom, matiere):
         super().__init__(nom, prenom)
-        self.salaire = 1000
+        self.matiere = matiere
 
-    def changer_salaire(self, salaire):
-        self.salaire = salaire
+
+    def faire_appel(self, promotion):
+        for eleve in promotion.list_eleves:
+            if eleve.est_present:
+                print(f"{eleve.prenom}, {eleve.nom} est présent")
+            else:
+                print(f"{eleve.prenom}, {eleve.nom} n'est pas présent")
