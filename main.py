@@ -2,6 +2,7 @@ from Classe.Ecole import Ecole
 from Classe.Promotion import Promotion
 from Classe.Eleve import Eleve
 from Classe.Professeur import Prof
+from Classe.Car import Car
 
 
 
@@ -42,17 +43,33 @@ promotion_terminal_a.add_eleve(eleve_theo)
 promotion_terminal_a.add_eleve(eleve_florian)
 promotion_terminal_a.add_eleve(eleve_coline)
 
+eleve_tom.eleve_present()
+eleve_theo.eleve_present()
+eleve_lucas.eleve_present()
+eleve_florian.eleve_present()
+
+
+#Créer un car
+c1 = Car(3)
+
+
+#Ajout promo dans car
+c1.add_passager(promotion_terminal_a)
+
 
 
 eleve_tom.eleve_present()
 
+<<<<<<< HEAD
 
 promotion_terminal_a.afficher_promo()
+=======
+>>>>>>> refs/remotes/origin/master
 
 
 
 
 # Faire l'appel
-prof_algo.faire_appel(promotion_terminal_a)
+#prof_algo.faire_appel(promotion_terminal_a)
 
 
