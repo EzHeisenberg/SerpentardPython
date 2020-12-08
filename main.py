@@ -27,3 +27,4 @@ eleve_theo = Eleve("Zazou","Théo", ecole.nom_ecole())
 eleve_florian = Eleve("Sinegre","Florian", ecole.nom_ecole())
 eleve_coline = Eleve("Pierre","Coline", ecole.nom_ecole())
 eleve_timote = Eleve("Dasque","Timoté", ecole.nom_ecole())
+
