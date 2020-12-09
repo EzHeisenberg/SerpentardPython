@@ -98,27 +98,24 @@ liste_eleve_1 = [ eleve_1, eleve_2, eleve_3, eleve_4, eleve_5, eleve_6,  eleve_7
 liste_eleve_2 = [ eleve_14, eleve_15, eleve_16, eleve_17, eleve_18, eleve_19,  eleve_20,  eleve_21, eleve_22, eleve_23, eleve_24, eleve_25, eleve_26 , eleve_38, eleve_39]
 liste_eleve_3 = [ eleve_27, eleve_28, eleve_29, eleve_30, eleve_31, eleve_32,  eleve_33,  eleve_34, eleve_35, eleve_36, eleve_37 ]
 
+
 # AJOUTE DE LA LISTE ELEVE UN A LA PROMO
+print("===========================================")
 for liste_1 in liste_eleve_1:
     classroom_1.add_eleve(liste_1)
+print("===========================================")
 
- # AJOUTE DE LA LISTE ELEVE UN A LA PROMO
+# AJOUTE DE LA LISTE ELEVE UN A LA PROMO
 for liste_2 in liste_eleve_2:
     classroom_2.add_eleve(liste_2)
+print("===========================================")
 
 # AJOUTE DE LA LISTE ELEVE UN A LA PROMO
 for liste_3 in liste_eleve_3:
     classroom_3.add_eleve(liste_3)
+print("===========================================")
 
-
-classroom_1.afficher_promo()
-classroom_2.afficher_promo()
 classroom_3.afficher_promo()
-
-
-
-
-
 
 
 
