@@ -12,12 +12,17 @@ class Promotion:
         if len(self.list_eleves) < self.nombre_max:
             self.list_eleves.append(eleve)
             print(f"{eleve.prenom} a été ajouter a la classe : {self.nom}")
+
         else:
-            print(f"Vous ne pouvez plus ajouter d'eleve a cette classe, nombre eleve max : {self.nombre_max}")
-            print(f"{len(self.list_eleves)}/{self.nombre_max}")
+            print("===========================================")
+            print(f"Vous ne pouvez plus ajouter d'eleve a cette classe, nombre eleve max : {len(self.list_eleves)}/{self.nombre_max}")
+            print("===========================================")
+
+
 
     def afficher_promo(self):
-        print(f"Classe : {self.nom}")
+        print("===========================================")
+        print(f"==== Classe : {self.nom} : {len(self.list_eleves)}/{self.nombre_max} ====")
         for eleve in self.list_eleves:
-            print(eleve.nom)
-        print(f"Votre promotion est de {len(self.list_eleves)}/{self.nombre_max} élèves")
+            print(f"{eleve.nom}, {eleve.prenom}")
+        print("===========================================")
