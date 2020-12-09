@@ -41,4 +41,6 @@ class Car:
             print(f"le car ne peut pas partir car il y a moins de 10 personnes : {len(self.list_passager)}/{self.nombre_place_max} places")
 
 
-
+    def afficher_eleves(self):
+        for eleve in self.list_passager:
+            print(f"        - {eleve.nom}")
