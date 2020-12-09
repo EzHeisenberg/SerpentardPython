@@ -43,4 +43,4 @@ class Car:
 
     def afficher_eleves(self):
         for eleve in self.list_passager:
-            print(f"        - {eleve.nom}")
+            print(f"        - {eleve.nom}, {eleve.prenom}")

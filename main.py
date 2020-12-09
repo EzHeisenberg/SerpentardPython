@@ -6,11 +6,12 @@ from Classe.Professeur import Prof
 from Classe.Car import Car
 
 
+
 print('============================================')
 print('====== Bienvenu sur SchoolCar Manager ======')
 print('============================================')
-print("")
-# CRÉATION DE L'ÉCOLE #
+
+# CREATION DE L'ECOLE #
 
 ecole_epsi = Ecole("EPSI")
 
@@ -21,25 +22,25 @@ ecole_epsi = Ecole("EPSI")
 
 # CREATION DES CLASSE #
 
-print("**** CRÉER VOTRE CLASSE 1 *** ")
-print("**** indiquer son NOM : *** ")
+print("=====      CREER VOTRE CLASSE 1       =====")
+print("=====       indiquer son NOM :        =====")
+print("===========================================")
 name_classroom1 = input("nom classe : ")
-print("-------------------------------------------")
-
 classroom_1 = Promotion(name_classroom1)
 
-print("**** CRÉER VOTRE CLASSE 2 *** ")
-print("**** indiquer son NOM : *** ")
+print("===========================================")
+print("=====      CREER VOTRE CLASSE 2       =====")
+print("=====       indiquer son NOM :        =====")
+print("===========================================")
+
 name_classroom2 = input("nom classe : ")
-print("-------------------------------------------")
 classroom_2 = Promotion(name_classroom2)
 
-
-
-print("**** CRÉER VOTRE CLASSE 3 *** ")
-print("**** indiquer son NOM : *** ")
+print("===========================================")
+print("=====      CREER VOTRE CLASSE 3       =====")
+print("=====       indiquer son NOM :        =====")
+print("===========================================")
 name_classroom3 = input("nom classe : ")
-print("-------------------------------------------")
 classroom_3 = Promotion(name_classroom3)
 
 ###################################
@@ -49,8 +50,6 @@ classroom_3 = Promotion(name_classroom3)
 ecole_epsi.add_promo(classroom_1)
 ecole_epsi.add_promo(classroom_2)
 ecole_epsi.add_promo(classroom_3)
-
-ecole_epsi.afficher_tout_promo()
 
 
 eleve_1 = Eleve("Reteau", "Lucas", ecole_epsi.nom_ecole(), True)
@@ -64,7 +63,7 @@ eleve_8 = Eleve("Activia", "Louise", ecole_epsi.nom_ecole(), True)
 eleve_9 = Eleve("Valise", "Camille", ecole_epsi.nom_ecole(), True)
 eleve_10 = Eleve("Terzi", "Emma", ecole_epsi.nom_ecole(), True)
 eleve_11 = Eleve("Thomma", "Iness", ecole_epsi.nom_ecole(), True)
-eleve_12 = Eleve("Petit", "Chloé", ecole_epsi.nom_ecole(), True)
+eleve_12 = Eleve("Petit", "Chloe", ecole_epsi.nom_ecole(), True)
 eleve_13 = Eleve("Robert", "Sarah", ecole_epsi.nom_ecole(), True)
 eleve_14 = Eleve("Vince", "Bertrand", ecole_epsi.nom_ecole(), True)
 eleve_15 = Eleve("Bertrand", "Alice", ecole_epsi.nom_ecole(), True)
@@ -82,10 +81,10 @@ eleve_26 = Eleve("Marchant", "Mathieu", ecole_epsi.nom_ecole(), True)
 eleve_27 = Eleve("Sopra", "Margaux", ecole_epsi.nom_ecole(), True)
 eleve_28 = Eleve("Gallard", "Victurine", ecole_epsi.nom_ecole(), True)
 eleve_29 = Eleve("Schmit", "Pauline", ecole_epsi.nom_ecole(), True)
-eleve_30 = Eleve("Millet", "Noémie", ecole_epsi.nom_ecole(), True)
-eleve_31 = Eleve("Zazou","Théo", ecole_epsi.nom_ecole(), False)
-eleve_32 = Eleve("Dasque","Timoté", ecole_epsi.nom_ecole(), False)
-eleve_33 = Eleve("Michelin", "Mathieur", ecole_epsi.nom_ecole(), True)
+eleve_30 = Eleve("Millet", "Noemie", ecole_epsi.nom_ecole(), True)
+eleve_31 = Eleve("Zazou","Theo", ecole_epsi.nom_ecole(), False)
+eleve_32 = Eleve("Dasque","Timote", ecole_epsi.nom_ecole(), False)
+eleve_33 = Eleve("Michelin", "Mathieu", ecole_epsi.nom_ecole(), True)
 eleve_34 = Eleve("Bitto", "Caroline", ecole_epsi.nom_ecole(), True)
 eleve_35 = Eleve("Pomme", "Pauline", ecole_epsi.nom_ecole(), True)
 eleve_36 = Eleve("Peni", "Perrnine", ecole_epsi.nom_ecole(), True)
@@ -101,21 +100,24 @@ liste_eleve_3 = [ eleve_27, eleve_28, eleve_29, eleve_30, eleve_31, eleve_32,  e
 
 # AJOUTE DE LA LISTE ELEVE UN A LA PROMO
 print("===========================================")
+print(f"=                 {classroom_1.nom}                  =")
+print("===========================================")
 for liste_1 in liste_eleve_1:
     classroom_1.add_eleve(liste_1)
 print("===========================================")
-
+print(f"=                 {classroom_2.nom}                  =")
+print("===========================================")
 # AJOUTE DE LA LISTE ELEVE UN A LA PROMO
 for liste_2 in liste_eleve_2:
     classroom_2.add_eleve(liste_2)
 print("===========================================")
-
+print(f"=                 {classroom_3.nom}                  =")
+print("===========================================")
 # AJOUTE DE LA LISTE ELEVE UN A LA PROMO
 for liste_3 in liste_eleve_3:
     classroom_3.add_eleve(liste_3)
 print("===========================================")
 
-classroom_3.afficher_promo()
 
 
 
@@ -125,15 +127,10 @@ classroom_3.afficher_promo()
 
 
 
-# CRÉATION DES PROF #
 
-prof_python = Prof("MALABRY", "Emmanuel", "Python")
-prof_algo = Prof("BRAUX", "Mathias", "Algorithmie")
-prof_math = Prof("Robin", "Olivier", "Mathématique")
 
 
 
-# CREATION DES ELEVES #
 
 
 
@@ -161,37 +158,6 @@ prof_math = Prof("Robin", "Olivier", "Mathématique")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Declaration d'un ecole
-
-
-
-# Déclaration des professeurs
-
-
-
-
-
-
-
-# Déclaration des élèves
-
-eleve_theo = Eleve("Zazou","Théo", ecole_epsi.nom_ecole(), False)
-eleve_timote = Eleve("Dasque","Timoté", ecole_epsi.nom_ecole(), False)
 
 
 
