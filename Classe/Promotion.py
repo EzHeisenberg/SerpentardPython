@@ -14,9 +14,7 @@ class Promotion:
             print(f"{eleve.prenom} a été ajouter a la classe : {self.nom}")
 
         else:
-            print("===========================================")
             print(f"Vous ne pouvez plus ajouter d'eleve a cette classe, nombre eleve max : {len(self.list_eleves)}/{self.nombre_max}")
-            print("===========================================")
 
 
 
