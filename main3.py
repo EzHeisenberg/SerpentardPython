@@ -3,6 +3,7 @@ from Classe.Promotion import Promotion
 from Classe.Eleve import Eleve
 from Classe.Professeur import Prof
 from Classe.Car import Car
+import os
 
 print("===========================================")
 print("===== Bienvenue sur SchoolCar Manager =====")
@@ -114,7 +115,7 @@ classroom_2.afficher_promo()
 classroom_3.afficher_promo()
 
 
-
+os.system('cls')
 
 stay = "oui"
 while stay == "oui":
@@ -124,6 +125,7 @@ while stay == "oui":
     print("== Veuillez choisir une option :         ==")
     print("==   1- Programmer un voyage             ==")
     print("==   2- Afficher les voyages             ==")
+
 
     choix = 0
 
