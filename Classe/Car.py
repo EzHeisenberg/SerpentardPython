@@ -7,7 +7,7 @@ class Car:
         self.list_promotion = []
         self.max_promotion = 3
         self.nom = nom
-        self.nombre_place_max = 50
+        self.nombre_place_max = place_max
         self.depart = depart
         self.arrive = arrive
 
