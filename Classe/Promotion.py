@@ -11,10 +11,10 @@ class Promotion:
     def add_eleve(self, eleve):
         if len(self.list_eleves) < self.nombre_max:
             self.list_eleves.append(eleve)
-            print(f"{eleve.prenom} a été ajouter a la classe : {self.nom}")
+            print(f"\033[32m{eleve.prenom} {eleve.nom},\033[0m a été ajouter a la classe")
 
         else:
-            print(f"Vous ne pouvez plus ajouter d'eleve a cette classe, nombre eleve max : {len(self.list_eleves)}/{self.nombre_max}")
+            print(f"\033[31mVous ne pouvez plus ajouter d'eleve\033[0m a cette classe, nombre eleve max : {len(self.list_eleves)}/{self.nombre_max}")
 
 
 

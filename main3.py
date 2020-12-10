@@ -118,6 +118,7 @@ classroom_1.afficher_promo()
 classroom_2.afficher_promo()
 classroom_3.afficher_promo()
 
+print(f"====== Les promo {classroom_1}, {classroom_2}, {classroom_3}, ont bien été ajoutées")
 
 
 stay = "oui"
@@ -187,6 +188,7 @@ while stay == "oui":
             choix = 0
 
     while choix == 2:
+
         print("ok")
 
 """
