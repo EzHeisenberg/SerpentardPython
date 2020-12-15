@@ -25,7 +25,14 @@ ecole_epsi = Ecole("EPSI")
 #               END               #
 ###################################
 
-
+prof_classroom_1 = Prof("Braux", "Mathias")
+prof_classroom_2 = Prof("Reinold", "Fréderic")
+prof_classroom_3 = Prof("Henry", "Guillaume")
+prof_1 = Prof("Henry", "Guillaume")
+prof_2 = Prof("Gabs", "Maki")
+prof_3 = Prof("Vichen", "Bart")
+prof_4 = Prof("Palok", "Nicolas")
+prof_5 = Prof("Bolid", "Vincent")
 
 
 
@@ -42,7 +49,7 @@ print("=====       CREER VOTRE CLASSE 1       =====")
 print("=====        indiquer son NOM :        =====")
 print('============================================')
 name_classroom1 = input("===== NOM classe 1 : ")
-classroom_1 = Promotion(name_classroom1)
+classroom_1 = Promotion(name_classroom1, prof_classroom_1)
 
 print("============================================")
 print("=====       CREER VOTRE CLASSE 2       =====")
@@ -50,14 +57,14 @@ print("=====        indiquer son NOM :        =====")
 print("============================================")
 
 name_classroom2 = input("===== NOM classe 2 : ")
-classroom_2 = Promotion(name_classroom2)
+classroom_2 = Promotion(name_classroom2, prof_classroom_2)
 
 print("============================================")
 print("=====       CREER VOTRE CLASSE 3       =====")
 print("=====        indiquer son NOM :        =====")
 print("============================================")
 name_classroom3 = input("===== NOM classe 3 : ")
-classroom_3 = Promotion(name_classroom3)
+classroom_3 = Promotion(name_classroom3, prof_classroom_3)
 
 ###################################
 #               END               #
@@ -89,45 +96,45 @@ ecole_epsi.add_promo(classroom_3)
 #       CREATION DES ELEVES       #
 ###################################
 
-eleve_1 = Eleve("Reteau", "Lucas", ecole_epsi.nom, True)
-eleve_2 = Eleve("Poyvre", "tom", ecole_epsi.nom, True)
-eleve_3 = Eleve("Sinegre", "Florian", ecole_epsi.nom, True)
-eleve_4 = Eleve("Sekkat", "Rayan", ecole_epsi.nom, True)
-eleve_5 = Eleve("Pierre", "Coline", ecole_epsi.nom, True)
-eleve_6 = Eleve("Duval", "Amoryne", ecole_epsi.nom, True)
-eleve_7 = Eleve("Dupont", "Amandine", ecole_epsi.nom, True)
-eleve_8 = Eleve("Activia", "Louise", ecole_epsi.nom, True)
-eleve_9 = Eleve("Valise", "Camille", ecole_epsi.nom, True)
-eleve_10 = Eleve("Terzi", "Emma", ecole_epsi.nom, True)
-eleve_11 = Eleve("Thomma", "Iness", ecole_epsi.nom, True)
-eleve_12 = Eleve("Petit", "Chloe", ecole_epsi.nom, True)
-eleve_13 = Eleve("Robert", "Sarah", ecole_epsi.nom, True)
-eleve_14 = Eleve("Vince", "Bertrand", ecole_epsi.nom, True)
-eleve_15 = Eleve("Bertrand", "Alice", ecole_epsi.nom, True)
-eleve_16 = Eleve("Martin", "Charlotte", ecole_epsi.nom, True)
-eleve_17 = Eleve("Scelo", "Nicolas", ecole_epsi.nom, True)
-eleve_18 = Eleve("Lefevre", "Paul", ecole_epsi.nom, True)
-eleve_19 = Eleve("Andre", "Martin", ecole_epsi.nom, True)
-eleve_20 = Eleve("Legrand", "Alban", ecole_epsi.nom, True)
-eleve_21 = Eleve("Robin", "Arthur", ecole_epsi.nom, True)
-eleve_22 = Eleve("Clement", "Clement", ecole_epsi.nom, True)
-eleve_23 = Eleve("Henri", "Golpas", ecole_epsi.nom, True)
-eleve_24 = Eleve("Roussel", "Matteo", ecole_epsi.nom, True)
-eleve_25 = Eleve("Haribo", "Kevin", ecole_epsi.nom, True)
-eleve_26 = Eleve("Marchant", "Mathieu", ecole_epsi.nom, True)
-eleve_27 = Eleve("Sopra", "Margaux", ecole_epsi.nom, True)
-eleve_28 = Eleve("Gallard", "Victurine", ecole_epsi.nom, True)
-eleve_29 = Eleve("Schmit", "Pauline", ecole_epsi.nom, True)
-eleve_30 = Eleve("Millet", "Noemie", ecole_epsi.nom, True)
-eleve_31 = Eleve("Zazou","Theo", ecole_epsi.nom, False)
-eleve_32 = Eleve("Dasque","Timote", ecole_epsi.nom, False)
-eleve_33 = Eleve("Michelin", "Mathieu", ecole_epsi.nom, True)
-eleve_34 = Eleve("Bitto", "Caroline", ecole_epsi.nom, True)
-eleve_35 = Eleve("Pomme", "Pauline", ecole_epsi.nom, True)
-eleve_36 = Eleve("Peni", "Perrnine", ecole_epsi.nom, True)
-eleve_37 = Eleve("Jibel","Kylle", ecole_epsi.nom, False)
-eleve_38 = Eleve("Vinaick","Vachalait", ecole_epsi.nom, False)
-eleve_39 = Eleve("Pino","Kyo", ecole_epsi.nom, False)
+eleve_1 = Eleve("Reteau", "Lucas", ecole_epsi.nom, True, False)
+eleve_2 = Eleve("Poyvre", "tom", ecole_epsi.nom, True, False)
+eleve_3 = Eleve("Sinegre", "Florian", ecole_epsi.nom, True, False)
+eleve_4 = Eleve("Sekkat", "Rayan", ecole_epsi.nom, True, False)
+eleve_5 = Eleve("Pierre", "Coline", ecole_epsi.nom, True, False)
+eleve_6 = Eleve("Duval", "Amoryne", ecole_epsi.nom, True, False)
+eleve_7 = Eleve("Dupont", "Amandine", ecole_epsi.nom, True, False)
+eleve_8 = Eleve("Activia", "Louise", ecole_epsi.nom, True, False)
+eleve_9 = Eleve("Valise", "Camille", ecole_epsi.nom, True, False)
+eleve_10 = Eleve("Terzi", "Emma", ecole_epsi.nom, False, False)
+eleve_11 = Eleve("Thomma", "Iness", ecole_epsi.nom, True, False)
+eleve_12 = Eleve("Petit", "Chloe", ecole_epsi.nom, True, False)
+eleve_13 = Eleve("Robert", "Sarah", ecole_epsi.nom, True, False)
+eleve_14 = Eleve("Vince", "Bertrand", ecole_epsi.nom, True, False)
+eleve_15 = Eleve("Bertrand", "Alice", ecole_epsi.nom, False, False)
+eleve_16 = Eleve("Martin", "Charlotte", ecole_epsi.nom, True, False)
+eleve_17 = Eleve("Scelo", "Nicolas", ecole_epsi.nom, True, False)
+eleve_18 = Eleve("Lefevre", "Paul", ecole_epsi.nom, True, False)
+eleve_19 = Eleve("Andre", "Martin", ecole_epsi.nom, True, False)
+eleve_20 = Eleve("Legrand", "Alban", ecole_epsi.nom, True, False)
+eleve_21 = Eleve("Robin", "Arthur", ecole_epsi.nom, True, False)
+eleve_22 = Eleve("Clement", "Clement", ecole_epsi.nom, True, False)
+eleve_23 = Eleve("Henri", "Golpas", ecole_epsi.nom, False, False)
+eleve_24 = Eleve("Roussel", "Matteo", ecole_epsi.nom, True, False)
+eleve_25 = Eleve("Haribo", "Kevin", ecole_epsi.nom, True, False)
+eleve_26 = Eleve("Marchant", "Mathieu", ecole_epsi.nom, True, False)
+eleve_27 = Eleve("Sopra", "Margaux", ecole_epsi.nom, True, False)
+eleve_28 = Eleve("Gallard", "Victurine", ecole_epsi.nom, True, False)
+eleve_29 = Eleve("Schmit", "Pauline", ecole_epsi.nom, True, False)
+eleve_30 = Eleve("Millet", "Noemie", ecole_epsi.nom, True, False)
+eleve_31 = Eleve("Zazou","Theo", ecole_epsi.nom, False, False)
+eleve_32 = Eleve("Dasque","Timote", ecole_epsi.nom, False, False)
+eleve_33 = Eleve("Michelin", "Mathieu", ecole_epsi.nom, True, False)
+eleve_34 = Eleve("Bitto", "Caroline", ecole_epsi.nom, True, False)
+eleve_35 = Eleve("Pomme", "Pauline", ecole_epsi.nom, True, False)
+eleve_36 = Eleve("Peni", "Perrnine", ecole_epsi.nom, True, False)
+eleve_37 = Eleve("Jibel","Kylle", ecole_epsi.nom, False, False)
+eleve_38 = Eleve("Vinaick","Vachalait", ecole_epsi.nom, False, False)
+eleve_39 = Eleve("Pino","Kyo", ecole_epsi.nom, False, False)
 
 
 liste_eleve_1 = [ eleve_1, eleve_2, eleve_3, eleve_4, eleve_5, eleve_6,  eleve_7,  eleve_8, eleve_9, eleve_10, eleve_11, eleve_12, eleve_13 ]
@@ -208,21 +215,18 @@ while choix_menu == "0":
         print("===========================================")
 
         nombre_bus = int(input("===== Nombre de BUS : "))
+        destination = input(f"===== Saisir la destination des bus  : ")
+
         i = 1
         while i < nombre_bus + 1:
             nom = input(f"==== Veuillez saisir un nom pour le car n°{i} : ")
             max = int(input(f"==== Veuillez saisir un maximum de place pour le car n°{i} : "))
             print("===========================================")
 
-            globals()[f"car{i}"] = Car(nom, max, ecole_epsi.nom, "Marseille")
+            globals()[f"car{i}"] = Car(nom, max, ecole_epsi.nom, destination)
             liste_bus.append(globals()[f"car{i}"])
 
             i = i + 1
-
-
-
-
-
 
 
         print("=====           LISTE DE BUS          =====")
@@ -237,11 +241,11 @@ while choix_menu == "0":
                   "\033[0m   |   \033[31m", globals()[f"car{i}"].arrive, "\033[0m")
             i = i + 1
         print("=====         LISTE DE ClASSE         =====")
-        print(f" 1- {classroom_1.nom}")
-        print(f" 2- {classroom_2.nom}")
-        print(f" 3- {classroom_3.nom}")
+        print(f" \033[32m 1- {classroom_1.nom} \033[0m")
+        print(f" \033[32m 2- {classroom_2.nom} \033[0m")
+        print(f" \033[32m 3- {classroom_3.nom} \033[0m")
 
-        choix_menu = "2"
+        choix_menu = "0"
 
     ###################################
     #               END               #

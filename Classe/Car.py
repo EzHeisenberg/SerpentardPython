@@ -17,13 +17,17 @@ class Car:
         else:
             for eleve in promotion.list_eleves:
                 if eleve.est_present == True and len(self.list_passager) < self.place_max and len(self.list_promotion) < self.max_promotion:
-                    self.list_passager.append(eleve)
-                    print(f"{eleve.nom} est rentré dans le bus {self.nom}")
+                    if eleve.dans_bus == False:
+                        self.list_passager.append(eleve)
+                        print(f"{eleve.prenom}, {eleve.nom} est rentré dans le bus {self.nom}")
+                    else:
+                        print(f"\033[31m{eleve.prenom}, {eleve.nom} est déja rentré dans un bus\033[39m")
+
                 elif eleve.est_present == False :
-                    print(f"{eleve.nom} est absent")
+                    print(f"\033[35m{eleve.prenom}, {eleve.nom} est absent\033[39m")
 
                 else:
-                    print(f"{eleve.nom}, n'a pas pu rentré dans le bus, il n'y a plus de place")
+                    print(f"\033[31m{eleve.prenom}, {eleve.nom}, n'a pas pu rentré dans le bus, il n'y a plus de place\033[39m")
 
 
         if len(self.list_promotion) < self.max_promotion:
